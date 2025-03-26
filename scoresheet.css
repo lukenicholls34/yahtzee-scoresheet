@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+}
+.scoresheet-container {
+    margin: auto;
+    max-width: 80ch;
+    overflow-x: scroll;
+}
+.scoresheet {
+    border-collapse: collapse;
+    min-width: 100%;
+    padding: 0.5rem;
+}
+.scoresheet caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    text-align: left;
+}
+.scoresheet thead th {
+    border-bottom: solid #000 4px;
+    border-top: solid #000 4px;
+}
+.scoresheet :is(td, th){
+    border-bottom: solid #ddd 1px;
+    padding: 0.5rem;
+    text-align: center;
+}
+.scoresheet tbody :is(td, th):nth-child(n + 3){
+    border-left: solid #ddd 1px;
+    border-right: solid #ddd 1px;
+}
+.scoresheet .help-text {
+    font-weight: normal;
+}
