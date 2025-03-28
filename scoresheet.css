@@ -1,10 +1,17 @@
+* {
+    box-sizing: border-box;
+}
 body {
+    background: #dedede;
     font-family: sans-serif;
 }
 h1 {
     text-align: center;
 }
 .scoresheet-container {
+    background: #fff;
+    border-radius: 0.25rem;;
+    padding: 2rem;
     margin: 2rem auto;
     max-width: 80ch;
     overflow-x: scroll;
@@ -24,8 +31,15 @@ h1 {
     border-bottom: solid #000 4px;
     border-top: solid #000 4px;
 }
+.scoresheet thead th:nth-child(1) {
+    min-width: 15ch;
+}
+.scoresheet thead th:nth-child(2) {
+    min-width: 15ch;
+}
 .scoresheet :is(td, th){
     border-bottom: solid #ddd 1px;
+    height: 4rem;
     padding: 0.5rem;
     text-align: center;
 }
@@ -36,3 +50,4 @@ h1 {
 .scoresheet .help-text {
     font-weight: normal;
 }
+
