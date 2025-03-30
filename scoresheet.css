@@ -50,4 +50,8 @@ h1 {
 .scoresheet .help-text {
     font-weight: normal;
 }
+.scoresheet select {
+    height: 100%;
+    width: 100%;
+}
 
